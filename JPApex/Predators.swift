@@ -17,9 +17,9 @@ class Predators {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let apexPredators = try decoder.decode([ApexPredator].self, from: data)
+                apexPredators = try decoder.decode([ApexPredator].self, from: data)
             }catch{
-                print("Error occured while decoding")
+                print("Error occured while decoding\(error)")
             }
         }
     }
