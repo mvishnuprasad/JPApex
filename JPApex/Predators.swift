@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class Predators {
     var apexPredators : [ApexPredator]=[]
     var allApexPredators : [ApexPredator]=[]
@@ -46,8 +47,6 @@ class Predators {
             self.apexPredators =  self.allApexPredators.filter { predator in
                 predator.type == type
             }
-            
         }
-        
     }
 }
